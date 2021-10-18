@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.pinimg.com/564x/8f/1e/3b/8f1e3be163c34ddba11730e073e847e8.jpg",
+        "name": "Anaesthesia",
+        "description": "Anesthesia is a state of controlled, temporary loss of sensation or awareness that is induced for medical purposes. It may include some or all of analgesia, paralysis, amnesia, and unconsciousness. A patient under the effects of anesthetic drugs is referred to as being anesthetized."
+      },
+      {
+        "id": 2,
+        "image": "https://i.pinimg.com/564x/70/81/cd/7081cd86f750cd2313d31dde2e1c6b38.jpg",
+        "name": "Neurology",
+        "description": "Neurology is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems, including their coverings, blood vessels, and all effector tissue, such as muscle."
+      },
+      {
+        "id": 3,
+        "image": "https://i.pinimg.com/564x/ea/f8/ba/eaf8baf923e40cc2f825c0cf78afb422.jpg",
+        "name": "Pathology",
+        "description": "Pathology is the study of the causes and effects of disease or injury. The word pathology also refers to the study of disease in general, incorporating a wide range of biology research fields and medical practices."
+      },
+      {
+        "id": 4,
+        "image": "https://i.pinimg.com/564x/75/af/9e/75af9ef2577c0bf8688e243cc38def29.jpg",
+        "name": "Radiology",
+        "description": "Radiology is a medical specialty that uses imaging techniques such as x-rays, ultrasounds, CT scans, positron emission tomography (PET) scans, and MRI scans. MRI radiology is incredibly common. In fact, over 30 million MRI scans are performed in the U.S. every year."
+      },
+      {
+        "id": 5,
+        "image": "https://i.pinimg.com/564x/7b/ab/4c/7bab4c882400170c4697eef16d454d68.jpg",
+        "name": "Blood Bank",
+        "description": "Blood banking is the process that takes place in the lab to make sure that donated blood, or blood products, are safe before they are used in blood transfusions and other medical procedures. Blood banking includes typing the blood for transfusion and testing for infectious diseases."
+      },
+      {
+        "id": 6,
+        "image": "https://i.pinimg.com/564x/2c/cc/63/2ccc635548b6667072975a57e4341e63.jpg",
+        "name": "Heart Transplant",
+        "description": "A heart transplant, or a cardiac transplant, is a surgical transplant procedure performed on patients with end-stage heart failure or severe coronary artery disease when other medical or surgical treatments have failed."
+      },
+      {
+          "id": 7,
+          "image": "https://i.pinimg.com/564x/2f/24/2a/2f242aa317ce89851c3176f17549e459.jpg",
+          "name": "Neurosurgery",
+          "description": "Neurosurgery or neurological surgery, known in common parlance as brain surgery, is the medical specialty concerned with the prevention, diagnosis, surgical treatment, and rehabilitation of disorders which affect any portion of the nervous system including the brain, spinal cord, central and peripheral nervous system, and cerebrovascular system."
+      },
+      {
+          "id": 8,
+          "image": "https://i.pinimg.com/564x/6d/a6/ce/6da6ce58e1df85d3cd81cc1ca2b7e6f7.jpg",
+          "name": "Plastic Surgery",
+          "description": "Plastic surgery is a surgical specialty involving the restoration, reconstruction, or alteration of the human body. It can be divided into two main categories: reconstructive surgery and cosmetic surgery. Reconstructive surgery includes craniofacial surgery, hand surgery, microsurgery, and the treatment of burns."
+      },
+      {
+          "id": 9,
+          "image": "https://i.pinimg.com/564x/5c/43/8f/5c438f13e12ce1a1b13e19d6b81885c9.jpg",
+          "name": "Robotic Surgery",
+          "description": "Robotic surgery, or robot-assisted surgery, allows doctors to perform many types of complex procedures with more precision, flexibility and control than is possible with conventional techniques. Robotic surgery is usually associated with minimally invasive surgery — procedures performed through tiny incisions."
+      },
+      {
+          "id": 10,
+          "image": "https://i.pinimg.com/564x/23/99/89/239989b747cd09484b4b32f12e85a821.jpg",
+          "name": "Dental Sciences",
+          "description": "Dental science is a branch of medicine that is involved in the study, diagnosis, prevention and treatment of different disorders as well as diseases of dental region. It will mainly focus on structure, development and abnormalities of the teeth. A medical practitioner who is dealing dental science called dentists."
+      },
+      {
+          "id": 11,
+          "image": "https://i.pinimg.com/564x/eb/26/ce/eb26ce845cc613cf41928fbcbebc3a55.jpg",
+          "name": "Diabetology",
+          "description": "Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy. Most of the food you eat is broken down into sugar (also called glucose) and released into your bloodstream. When your blood sugar goes up, it signals your pancreas to release insulin."
+      },
+      {
+          "id": 12,
+          "image": "https://i.pinimg.com/564x/c5/d8/da/c5d8da3f12f10dde7fcbb9f733396b30.jpg",
+          "name": "Liver Transplant",
+          "description": "A liver transplant is surgery to replace a diseased liver with a healthy liver from another person. A whole liver may be transplanted, or just part of one. In most cases the healthy liver will come from an organ donor who has just died. Sometimes a healthy living person will donate part of their liver."
+      }
+]
