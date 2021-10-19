@@ -4,6 +4,7 @@ import './App.css';
 import Home from './Components/Home/Home/Home';
 import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import SeeDetails from './Components/SeeDetails/SeeDetails';
 import Services from './Components/Services/Services';
 import SignUp from './Components/SignUp/SignUp';
@@ -21,18 +22,18 @@ function App() {
           <Route path='/home'>
             <Home></Home>
           </Route>
-          <Route path='/services'>
+          <PrivateRoute path='/services'>
             <Services></Services>
-          </Route>
+          </PrivateRoute>
           <Route path='/login'>
             <Login></Login>
           </Route>
           <Route path='/signup'>
             <SignUp></SignUp>
           </Route>
-          <Route path='/service/:id'>
+          <PrivateRoute path='/service/:id'>
             <SeeDetails></SeeDetails>
-          </Route>
+          </PrivateRoute>
           <Route path='*'>
             <NotFound></NotFound>
           </Route>

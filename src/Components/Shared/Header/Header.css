@@ -45,11 +45,25 @@
 .logo-text{
     font-family: 'Black Ops One', cursive;
 }
+.user-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
 @media only screen and (max-width: 788px) {
     .nav-menu{
         flex-direction: column;
     }
     .nav-menu li {
         margin-bottom: 10px;
+    }
+    .user-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .user-image{
+        margin: 0 auto;
     }
 }

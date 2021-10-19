@@ -6,18 +6,12 @@ const useFirebase = () => {
     const [user, setUser] = useState({})
     const [error, setError] = useState('')
     const [success, setSuccess] = useState('')
+    const [isLoading, setIsLoading] = useState(true)
     const googleProvider = new GoogleAuthProvider()
     const auth = getAuth();
     const googleSignIn = ()=>{
-        signInWithPopup(auth, googleProvider)
-        .then(result => {
-            setUser(result.user)
-            setSuccess("your Are Successfully Sign up")
-        })
-        .catch(error => {
-            setError(error.message)
-            setSuccess("")
-        })
+        setIsLoading(true)
+        return signInWithPopup(auth, googleProvider)
     }
     const registerNewUser = (email, password,name) => {
         createUserWithEmailAndPassword(auth, email, password)
@@ -35,6 +29,7 @@ const useFirebase = () => {
             });
         }
     const logIn = (email, password)=>{
+        isLoading(true)
         signInWithEmailAndPassword(auth, email, password)
       .then(result => {
         setUser(result.user);
@@ -50,7 +45,7 @@ const useFirebase = () => {
         else{
             setError(error.message)
         }
-    })
+    }).finally(()=>setIsLoading(false))
     }
     const updateUser = (name) => {
         updateProfile(auth.currentUser, {
@@ -66,16 +61,18 @@ const useFirebase = () => {
             }else{
                 setUser({})
             }
+            setIsLoading(false);
           });
-    },[])
+    },[auth])
 
     const logOut = ()=>{
+        setIsLoading(true)
         signOut(auth).then(() => {
             setUser({})
             setSuccess('')
           }).catch((error) => {
             setError(error.message)
-          });
+          }).finally(()=>setIsLoading(false));
     }
     return {
         googleSignIn,
@@ -83,6 +80,10 @@ const useFirebase = () => {
         registerNewUser,
         setError,
         logIn,
+        setSuccess,
+        setUser,
+        setIsLoading,
+        isLoading,
         success,
         user,
         error,

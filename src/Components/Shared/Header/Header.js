@@ -30,7 +30,8 @@ const Header = () => {
                             <li><button onClick={handleSignUp} className='btn btn-secondary'>SignUp</button></li>
                             </>:
                             <>
-                            <li><span className='text-uppercase fw-bold text-primary'>{user.displayName}</span></li>
+                            <li className='user-container'>{user.photoURL && <img className='user-image' src={user.photoURL} alt="" />}<span className='text-capitalized fw-bold text-primary'>{user.displayName}</span></li>
+
                             <li><button onClick={logOut} className='btn btn-secondary'>LogOut</button></li>
                             </>
                             }

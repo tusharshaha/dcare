@@ -19,3 +19,9 @@
 .top-paragraph{
     color: rgb(87, 84, 84);
 }
+@media only screen and (max-width:480px) {
+    .top-header{
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+}

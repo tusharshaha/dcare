@@ -13,7 +13,7 @@ const Footer = () => {
                     <h3>About Us</h3>
 
                     <div className='mt-3'>
-                        <p>Learning martial arts is an extremely rewarding journey that we want to support you through. Take advantage of our special offer -- try a martial art through a free beginner’s course! </p>
+                        <p>Health care is the maintenance or improvement of health via the prevention, diagnosis, treatment, recovery, or cure of disease, illness, injury, and other physical and mental impairments in people. </p>
                     </div>
                     <div className="icon-container">
                     <a href="https://www.facebook.com/tusharshaha619" rel="noreferrer" target='_blank'><i className="fab fa-facebook-square"></i></a>

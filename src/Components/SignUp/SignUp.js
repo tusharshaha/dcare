@@ -3,13 +3,28 @@ import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 import { Button} from 'react-bootstrap';
 import './SignUp.css'
-import { Link } from 'react-router-dom';
+import { Link,useHistory, useLocation} from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 const SignUp = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [name, setName] = useState('')
-    const {setError,googleSignIn, registerNewUser, error, success} = useAuth()
+    const {setUser,setSuccess, setError,googleSignIn, registerNewUser, error, success, setIsLoading} = useAuth();
+    const history = useHistory();
+    const location = useLocation();
+    const redirect_uri = location?.state?.from || '/home';
+    const handleGoogleSignIn =()=>{
+      googleSignIn()
+      .then(result => {
+          setUser(result.user)
+          setSuccess("your Are Successfully Sign up")
+          history.push(redirect_uri)
+      })
+      .catch(error => {
+          setError(error.message)
+          setSuccess("")
+      }).finally(()=>setIsLoading(false))
+  }
     const handleSubmit = (e)=>{
         e.preventDefault()
         if (password.length < 6) {
@@ -38,7 +53,7 @@ const SignUp = () => {
                     <input onBlur={e => setPassword(e.target.value)} type="password" name="" id="" placeholder='Enter Your Password' required/>
                     <Button variant='info' className='text-white fw-bold' type='submit'>Sign Up</Button>
                 </form>
-                <Button onClick={googleSignIn} variant='outline-primary' className='mt-3'>Sign In With Google</Button>
+                <Button onClick={handleGoogleSignIn} variant='outline-primary' className='mt-3'>Sign In With Google</Button>
                 <p className="text-danger mt-3">{error}</p>
                 <p className="text-success">{success}</p>
                 <Link to='/login'>Already Have account? Pleace Login..</Link>
