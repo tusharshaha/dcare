@@ -19,6 +19,7 @@ const useFirebase = () => {
                 setUser(result.user)
                 setError('')
                 updateUser(name)
+                window.history.go(0)
             })
             .catch((error) => {
                 if(error.message.includes('email-already-in-use')){
@@ -29,7 +30,7 @@ const useFirebase = () => {
             });
         }
     const logIn = (email, password)=>{
-        isLoading(true)
+        setIsLoading(true)
         signInWithEmailAndPassword(auth, email, password)
       .then(result => {
         setUser(result.user);
