@@ -23,6 +23,8 @@ const Header = () => {
                             <li><NavLink className='item' activeClassName='selected' to='/home'>Home</NavLink></li>
 
                             <li><NavLink className='item' activeClassName='selected' to='/services'>Services</NavLink></li>
+                            
+                            <li><NavLink className='item' activeClassName='selected' to='/aboutus'>About Us</NavLink></li>
 
                             {!user.displayName?<>
                             <li><NavLink className='item' activeClassName='selected' to='/login'>Login</NavLink></li>
