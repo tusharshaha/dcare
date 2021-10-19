@@ -1,0 +1,9 @@
+.shortService::after{
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 150px;
+    height: 2.5px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,24 @@
+.footer-section{
+    background-color: rgba(0, 0, 0, 0.815);
+    height: 100%;
+}
+.icon-container{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    font-size: 20px;
+}
+.icon-container a:hover {
+    color: #1498c4;;
+    transition: 0.5s;
+}
+.icon-container a{
+    color: #0dcaf0;
+}
+.icon{
+    color: #0dcaf0;
+}
+.info li{
+    list-style: none;
+    margin-top: 10px;
+}
