@@ -1,0 +1,9 @@
+.appointment{
+    background-image: url('https://i.pinimg.com/564x/8e/10/3e/8e103e483c55134756a8dc838833a5d3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.315);
+    background-blend-mode: darken;
+    height: 650px;
+}

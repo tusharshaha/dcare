@@ -1,12 +1,13 @@
 import React from 'react';
-import { Container, Row,Col,Spinner } from 'react-bootstrap';
-import { useParams } from 'react-router';
+import { Container, Row,Col,Spinner,Button } from 'react-bootstrap';
+import { useHistory, useParams } from 'react-router';
 import useService from '../../Hooks/useService';
 import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 import './SeeDetails.css'
 const SeeDetails = () => {
     const {id} = useParams()
+    const history = useHistory()
     const {services} = useService()
     const details = services?.find(service => service.id === parseInt(id));
 
@@ -27,6 +28,7 @@ const SeeDetails = () => {
                 <div className="card-body">
                     <h4 className="card-title fw-bold">{details.name}</h4>
                     <p className="card-text pe-5">{details.description}</p>
+                    <Button onClick={()=>history.push('/appointment')} variant='outline-info' className='fw-bold'>Make Appointment</Button>
                 </div>
                 </Col>
             </Row>

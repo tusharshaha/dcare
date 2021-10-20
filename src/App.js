@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import './App.css';
 import AboutUs from './Components/AboutUS/AboutUs';
+import Appointment from './Components/Appointment/Appointment';
 import Home from './Components/Home/Home/Home';
 import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <PrivateRoute path='/service/:id'>
             <SeeDetails></SeeDetails>
+          </PrivateRoute>
+          <PrivateRoute path='/appointment'>
+            <Appointment></Appointment>
           </PrivateRoute>
           <Route path='*'>
             <NotFound></NotFound>
