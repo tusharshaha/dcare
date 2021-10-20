@@ -1,0 +1,11 @@
+.line-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 200px;
+}
+.line-container .line{
+    height: 4px;
+    width: 80px;
+}

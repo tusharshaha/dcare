@@ -4,6 +4,7 @@ import useService from '../../../Hooks/useService';
 import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
 import AboutDcare from '../AboutDcare/AboutDcare';
+import DcEnvironment from '../DcEnvironment/DcEnvironment';
 import GoogleMap from '../GoogleMap/GoogleMap';
 import ShortService from '../ShortService/ShortService';
 import TopBanner from '../TopBanner/TopBanner';
@@ -24,6 +25,7 @@ const Home = () => {
                     </Row>
                 </Container>
             </div>
+                <DcEnvironment></DcEnvironment>
                 <TopServices></TopServices>
                 <AboutDcare></AboutDcare>
                 <GoogleMap></GoogleMap>

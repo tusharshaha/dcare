@@ -1,10 +1,10 @@
 .service-card{
     height: 100%;
     border-radius: 10px;
-    border: 1px solid #0dcaf0;
+    border: 1px solid rgba(28, 170, 175, 0.76);
 }
 .service-card:hover{
-    box-shadow: rgba(124, 241, 245, 0.76) 0px 5px 15px;
+    box-shadow: rgba(28, 170, 175, 0.76)  0px 5px 15px;
     transition: 0.5s;
 }
 .service-details{
