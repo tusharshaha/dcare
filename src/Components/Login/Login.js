@@ -28,6 +28,7 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         logIn(email,password)
+        history.push(redirect_uri)
     }
     return (
         <>

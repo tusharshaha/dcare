@@ -23,7 +23,7 @@ const Header = () => {
                             <li><NavLink className='item' activeClassName='selected' to='/home'>Home</NavLink></li>
 
                             <li><NavLink className='item' activeClassName='selected' to='/services'>Services</NavLink></li>
-                            
+
                             <li><NavLink className='item' activeClassName='selected' to='/aboutus'>About Us</NavLink></li>
 
                             {!user.displayName?<>
@@ -32,7 +32,7 @@ const Header = () => {
                             <li><button onClick={handleSignUp} className='btn btn-secondary'>SignUp</button></li>
                             </>:
                             <>
-                            <li className='user-container'>{user.photoURL && <img className='user-image' src={user.photoURL} alt="" />}<span className='text-capitalized fw-bold text-primary'>{user.displayName}</span></li>
+                            <li className='user-container'>{user.photoURL && <img className='user-image' src={user.photoURL} alt="" />}<span className='text-capitalize fw-bold text-primary'>{user.displayName}</span></li>
 
                             <li><button onClick={logOut} className='btn btn-secondary'>LogOut</button></li>
                             </>
